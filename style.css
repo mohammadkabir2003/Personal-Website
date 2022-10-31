@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.hobbies
+{
+  border:2px solid black;
+  background-color: white;
+  padding-left:20px;
+  margin: 1px;
+  color: black;
+  font-weight:bold;
+  font-family:Cambria;
+}
+.description
+{
+  color: black;
+  font-family: Cambria;
+}
+#show1, #show2
+{
+  height: 200px;
+}
+.listing_title
+{
+  color:beige; 
+  font-size: 18px;
+  font-family: Cambria;
+  text-decoration:underline;
+  font-weight: bold;
+}
+#me
+{
+  height: 200px;
+  float:initial;
+  float: right;
+}
+.games_and_stuff
+{
+  border:2px solid black;
+  background-color: white;
+  padding-left:20px;
+  margin: 1px;
+  color: black;
+  font-weight:bold;
+  font-family:Cambria;
+}
+.extra
+{
+  color:beige; 
+  font-size: 18px;
+  margin: 1px;
+  font-family: Cambria;
+  text-decoration:underline;
+  font-weight: bold;
+}
+.welcome
+{
+  background-color:rgb(102, 153, 153);
+}
+.title
+{
+  color:beige; 
+  font-size: 18px;
+  font-family: Cambria;
+  text-decoration:underline;
+  font-weight: bold; 
+}
+.ratherquestion
+{
+  border:2px solid black;
+  background-color: white;
+  padding-left:20px;
+  color: black;
+  font-weight:bold;
+  font-family:Cambria;
+}
+
+.yourInfo
+{
+  border:2px solid black;
+  background-color: white;
+  padding-left:20px;
+  color: black;
+  font-weight:bold;
+  font-family:Cambria;
+}

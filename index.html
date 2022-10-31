@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Hello</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+
+  </head>
+
+  <body onload="welcomeFunction()" class= "welcome">
+    <img id= "me" src= "me.png" alt="Hello"/>
+    <h1 class="listing_title">
+    <p>Hello</p>
+    </h1>
+
+    <div class="description">
+      <p id= "myName">[placeholder]</p>
+      <p id= "myOtherName">[placeholder]</p>
+    </div>
+
+    <div class="description" id="my_description">
+      <p>I am 17.</p>
+    </div>
+    <br/>
+
+    <div class=" title">
+      <p>My Hobbies are:</p>
+    </div>
+
+    <div class="hobbies" id="hobby_box">
+      <p onclick="clickParagraph('TV shows')"> Watch TV shows.</p>
+      <img id= "show1" src= "the-office.jpg" alt="Watch TV shows"/>
+      <img id= "show2" src= "community.jpg" alt="Watch TV shows"/>
+      <p onclick="clickParagraph('Explore')"> Explore.</p>
+      <p onclick="clickParagraph('Have not played in a while')"> Play games.</p>
+      <p> Watch <a href="https://www.youtube.com/" target="_blank">Youtube</a>.</p>
+    </div>
+    <br/>
+
+    <div class="yourInfo">
+      <fieldset>
+        <legend id="aboutYou">Let's learn about you</legend>
+        <form name="urform" onSubmit="urInfo()">
+        <label for="fName">First name:</label>
+        <input type="text" id="fName" name="firstname" placeholder="Enter your first name" /><br /><br/>
+        <label for="lName">Last name:</label>
+        <input type="text" id="lName" name="lastname" placeholder="Enter your Last name"/><br /><br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="emailaddress" placeholder="Enter your email address" /><br /><br/>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthdaydate" /><br /><br/>
+        <button onclick ="submit()" id = "button"> Submit</button>
+        </form>
+        <br/>
+        <label for="ENTMT">Which one do you prefer?</label>
+        <select name="ENTMT" id="entmt">
+        <option value="ENTMT1">Books</option>
+        <option value="ENTMT2">Movies</option>
+        </select>
+        <br/><br/>
+        <button onclick="choose1()">Submit</button>
+        <br/>
+        <p>What is your favorite number?</p>
+        <input type="text" id="numBer"/>
+        <button onclick="number()">Submit</button>
+        <p id="answer">_</p>
+      </fieldset>
+    </div>
+
+    <br/>
+  <p class= "extra"> Let's play some games.</p>
+  <div class= "games_and_stuff">
+    <fieldset>
+      <legend id="coins">Coin Flip and Others</legend>
+      <p>Coin Flip History:</p>
+      <p id= "coin_flip_history"></p>
+      <p id= "coin_flip_message"></p>
+      <input type="button" value="flip a coin" onclick="coinFlip()"/>
+      <input type="button" value="Cheat the system" 
+      onclick="cheatTheCoinFlip()"/>
+      <input type="button" value="Add" onclick="addMore()"/>
+      <!--<button onclick="coinFlip()">Flip a coin</button>-->
+
+      <button onclick="myStuff()">stuff</button>
+      <p id="buttonClicked"></p>
+    </fieldset>
+
+    <fieldset>
+      <legend id="quiz">Quiz Time</legend>
+          <p>What is my Favorite TV Show?</p>
+          <input type="radio" id="Breaking Bad" name="shows" value="Breaking Bad"/>
+          <label for="Breaking Bad"> Breaking Bad </label><br/>
+          <input type="radio" id="Kim's Conveinence" name="shows" value="Kim's Conveinence"/>
+          <label for="Kim's Conveinence"> Kim's Conveinence </label><br/>
+          <input type="radio" id="Community" name="shows" value="Community"/>
+          <label for="Community"> Community </label><br/>
+          <input type="button" value="Submit" onclick="chooseShow()"/>
+          <p id="showResult">...</p>
+    </fieldset>
+    
+    <fieldset>
+      <legend id="question">Would You Rather...</legend>
+      <p> Option 1. Get a Million Dollars now? </p>
+      <p> Option 2. Get a Thousand Dollars every month? </p>
+      <p> (choose one please) </p>
+      <input type= "checkbox" id="choice1" name="choice1" value="Option 1"/>
+      <label for="choice1"> Option 1 </label><br/>
+      <input type= "checkbox" id="choice2" name="choice1" value="Option 2"/>
+      <label for="choice2"> Option 2 </label><br/>
+      <input type="button" value="Submit" onclick="chooseOption()"/>
+    </fieldset>
+
+
+
+  </div>
+
+    
+    <!-- I need to add more for my hobbies section  -->
+  </body>
+</html> 
